@@ -1,0 +1,44 @@
+{
+  "id": "resume-site",
+  "title": "Resume website",
+  "category": "Personal Productivity",
+  "upstreamRepository": "StartBootstrap/startbootstrap-resume",
+  "upstreamCommit": "c6fbe5ef431642984d0f17960194632f20cf67bc",
+  "upstreamUrl": "https://codeload.github.com/StartBootstrap/startbootstrap-resume/zip/c6fbe5ef431642984d0f17960194632f20cf67bc",
+  "upstreamSha256": "1d4d4f279f4023191e81951b79d316a3b058384af4edf0c353667ea7beeef1fd",
+  "upstreamBytes": 541460,
+  "license": "MIT",
+  "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+  "upstreamUpdated": "2024-04-29T11:15:04Z",
+  "archived": false,
+  "upstreamScripts": {
+    "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+    "build:assets": "node scripts/build-assets.js",
+    "build:pug": "node scripts/build-pug.js",
+    "build:scripts": "node scripts/build-scripts.js",
+    "build:scss": "node scripts/build-scss.js",
+    "clean": "node scripts/clean.js",
+    "start": "npm run build && node scripts/start.js",
+    "start:debug": "npm run build && node scripts/start-debug.js"
+  },
+  "upstreamDependencies": {
+    "bootstrap": "5.2.3"
+  },
+  "summary": "An editable resume website with experience, education, skills and anchored section navigation.",
+  "features": [
+    "Experience and education sections",
+    "Mobile navigation",
+    "Editable HTML resume; no account needed"
+  ],
+  "reviewDate": "2026-10-14",
+  "adaptations": [
+    "Use upstream prebuilt HTML/CSS/JS as editable source; no build toolchain required",
+    "Replace all bundled images, logos and illustrations with original SVG sample artwork",
+    "Remove SB Forms runtime and API-token attributes; explicitly label sample forms and content",
+    "Add a dependency-free local server with a public-file allowlist"
+  ],
+  "replacedAssets": [
+    "assets/img/favicon.ico",
+    "assets/img/profile.jpg"
+  ]
+}
